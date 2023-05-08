@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: sc-hmd-dlvr-asn-eapi
+description: Delivery Outbound ASN Experience API
+version: v1
+protocols:
+  - HTTP
+  - HTTPS
+
+uses:
+  ref: library.raml
+
+/ping:
+  displayName: API Ping Service
+  description: Health Check Resource
+  type: ref.api_status
+
+/asn:
+  displayName: Outbound ASN Service
+  description: Recieves ASN Data
+  type: ref.asn

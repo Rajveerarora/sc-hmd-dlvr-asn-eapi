@@ -1,0 +1,8 @@
+#%RAML 1.0 ResourceType
+
+post:
+  is: [ref.client-id-enforcement,ref.success_200,ref.Error_400]
+  description: receives the asn data
+  body:
+    application/json:
+      example: !include ../examples/response/asn.json

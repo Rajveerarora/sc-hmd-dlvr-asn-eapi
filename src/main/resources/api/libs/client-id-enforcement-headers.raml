@@ -1,0 +1,16 @@
+#%RAML 1.0 Trait
+description: provides the client Id & Client secret for the authorized application
+
+headers:
+  client_id:
+    description: Client Id of authorized application registered at identity provider.
+    displayName: client_id
+    example: Wsd456436345-56fgbhgfg-ffhjfg
+    required: true
+    type: string
+  client_secret:
+    description: Client Secret of authorized application registered at identity provider
+    displayName: client_secret
+    example: Wsd456436345-56fgfg-k234hjfg
+    required: true
+    type: string

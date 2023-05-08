@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<sub-flow name="outbound-asnSub_Flow" doc:id="cbe9c8ab-3df5-49c0-9f36-2c1144e39f7f" >
+		<logger level="INFO" doc:name="Before Request" doc:id="c61dc76b-a334-4142-937d-c974c87682bb" message='"Before Request"'/>
+		<http:request method="GET" doc:name="Request" doc:id="fa7e1034-a1dc-46b7-a64a-15adb08c18e0" config-ref="HTTP_Request_configuration1" path="/prcapi"/>
+		<logger level="INFO" doc:name="After Request" doc:id="36f5d419-ee71-42b6-8c86-a97422f5a832" message='"After Request"'/>
+	</sub-flow>
+</mule>

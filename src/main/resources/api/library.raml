@@ -1,0 +1,11 @@
+#%RAML 1.0 Library
+
+resourceTypes:
+  api_status: !include resource_templates/api_status.raml
+  asn: !include resource_templates/asn.raml
+
+traits:
+  client-id-enforcement: !include libs/client-id-enforcement-headers.raml
+  ping_success: !include response_template/ping_success.raml
+  success_200: !include  response_template/success_200.raml
+  Error_400: !include response_template/Error_400.raml
